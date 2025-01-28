@@ -15,18 +15,18 @@
     ></script>
     <script type="module">
       window.addEventListener("load", () => {
-        if (document.referrer) {
-          const homePage = "http://localhost:3000";
-          const { origin } = new URL(document.referrer);
-          if (origin === window.location.origin) {
-            const backBtn = document.createElement("a");
-            backBtn.classList.add("button", "error-button-back");
-            backBtn.href = homePage;
-            backBtn.textContent = "Go back";
-            backBtn.title = "Go back";
-            const btnContainer = document.querySelector(".button-container");
-            btnContainer.append(backBtn);
-          }
+        const baseUrl = `${window.location.protocol}//${
+          window.location.hostname
+        }${window.location.port ? ":" + window.location.port : ""}`;
+        const { origin, pathname } = new URL(baseUrl);
+        if (origin === window.location.origin) {
+          const backBtn = document.createElement("a");
+          backBtn.classList.add("button", "error-button-back");
+          backBtn.href = pathname;
+          backBtn.textContent = "Go back";
+          backBtn.title = "Go back";
+          const btnContainer = document.querySelector(".button-container");
+          btnContainer.append(backBtn);
         }
       });
     </script>
