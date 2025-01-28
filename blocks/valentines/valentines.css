@@ -1,0 +1,9 @@
+.valentines-special h2,
+p {
+    text-align: center;
+}
+
+.valentines-special {
+    background-color: lightgoldenrodyellow;
+    color: red;
+}
