@@ -1,0 +1,12 @@
+main {
+    background-color: var(--light-color);
+    color: black;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video>div>div {
+    border: 2px solid black;
+}

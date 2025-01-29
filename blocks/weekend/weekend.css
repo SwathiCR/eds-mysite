@@ -1,0 +1,11 @@
+.places {
+    display: flex;
+}
+
+.places>div {
+    flex: 1;
+    border: 2px solid black;
+    margin: 1% 1% 1% 0;
+    padding: 1%;
+    background-color: lightgoldenrodyellow;
+}
