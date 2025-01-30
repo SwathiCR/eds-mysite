@@ -5,6 +5,6 @@ export default async function decorate(block) {
     row.classList.add('places');
   });
   const placeholders = await fetchPlaceholders();
-  const clickMe = placeholders.ClickHere;
+  const clickMe = placeholders.clickHere;
   console.log(clickMe);
 }
