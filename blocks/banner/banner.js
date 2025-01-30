@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  block.classList.add(`banner-details`);
+  block.classList.add('banner-details');
 
   // setup image columns
   [...block.children].forEach((row) => {
