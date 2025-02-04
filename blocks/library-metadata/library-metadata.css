@@ -1,0 +1,25 @@
+.library-metadata {
+    background-color: lightgrey;
+}
+
+.library-metadata > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.library-metadata > div > div:first-of-type {
+    text-transform: capitalize;
+    font-size: var(--heading-font-size-sm);
+    font-weight: 600;
+}
+
+.library-metadata > div > div:first-of-type {
+    text-transform: capitalize;
+    font-size: var(--heading-font-size-sm);
+    font-weight: 600;
+}
+
+.library-metadata > div > div:first-of-type > :last-child::after {
+    content: ':';
+}
